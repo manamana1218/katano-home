@@ -4,44 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KATANO DESIGN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
     body {
-      font-family: 'Yu Gothic', sans-serif;
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
       background-color: #f2e8dc;
       color: #333;
-      margin: 0;
-      padding: 30px;
-      line-height: 1.8;
     }
 
-    .container {
+    header {
+      background: #5a4c3c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    main {
       max-width: 760px;
-      margin: auto;
+      margin: 0 auto;
       background: #fff;
       padding: 40px 30px;
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-      color: #444;
     }
 
     h2 {
       font-size: 24px;
-      margin-top: 50px;
-      margin-bottom: 20px;
+      margin-top: 40px;
       border-bottom: 2px solid #e6dccc;
-      display: inline-block;
-      padding-bottom: 6px;
+      padding-bottom: 8px;
       color: #5a4c3c;
     }
 
     p {
       font-size: 18px;
+      line-height: 1.8;
       margin: 10px 0;
     }
 
@@ -49,41 +54,31 @@
       display: block;
       margin: 20px auto;
       width: 100%;
-      max-width: 220px; /* ← ここでサイズ制限！ */
+      max-width: 220px;
       height: auto;
       border-radius: 8px;
     }
 
-    .line {
-      margin-top: 40px;
-    }
-
     footer {
-      margin-top: 60px;
+      text-align: center;
       font-size: 14px;
       color: #777;
-      line-height: 1.6;
+      margin: 40px 0;
     }
 
     footer a {
       color: #555;
       text-decoration: underline;
     }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 28px; }
-      h2 { font-size: 20px; }
-      p { font-size: 16px; }
-    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>KATANO DESIGN</h1>
-    <p>こんにちは、KATANO DESIGN（カタノデザイン）です。</p>
-    <p>「デザインに困ったら、ちょっと聞いてみようかな」と思ってもらえる、</p>
-    <p>そんな存在を目指して活動しています。</p>
+    <p>地域で活動する皆さまの「ちょっと困った」をデザインでサポートします</p>
+  </header>
 
+  <main>
     <h2>ご依頼いただけること</h2>
     <p>・チラシ制作（教室・お店など）</p>
     <p>・地域向け印刷物（町内会・掲示板用・回覧など）</p>
@@ -94,25 +89,23 @@
     <p>✔ お店や教室のチラシ・ポスターをつくりたい</p>
     <p>✔ 自分で作るのは苦手だけど、ちゃんと伝えたい</p>
 
-    <h2>対応可能なこと（サービス内容）</h2>
+    <h2>対応可能なこと</h2>
     <p>・チラシ・ポスター・SNS投稿用画像の作成</p>
     <p>・名刺・リーフレット・LINEリッチメニューなど</p>
     <p>・ホームページの作成（内容や規模に応じて要相談）</p>
 
     <img src="仕事ロゴ.png" alt="KATANO DESIGN ロゴ" class="center-image">
 
-    <div class="line">
-      <h2>LINEでのお問い合わせ</h2>
-      <p>LINEからもお気軽にご相談いただけます。</p>
-      <img src="仕事line.jpg" alt="LINE QRコード" class="center-image" />
-      <p>QRコードから読み取って友達追加してください📱</p>
-    </div>
+    <h2>LINEでのお問い合わせ</h2>
+    <p>LINEからもお気軽にご相談いただけます。</p>
+    <img src="仕事line.jpg" alt="LINE QRコード" class="center-image">
+    <p>QRコードから読み取って友達追加してください。</p>
+  </main>
 
-    <footer>
-      &copy; 2025 KATANO DESIGN<br>
-      北海道札幌市南区藤野<br>
-      ✉ <a href="mailto:katano.design4522@gmail.com">katano.design4522@gmail.com</a>
-    </footer>
-  </div>
+  <footer>
+    &copy; 2025 KATANO DESIGN<br>
+    北海道札幌市南区藤野<br>
+    ✉ <a href="mailto:katano.design4522@gmail.com">katano.design4522@gmail.com</a>
+  </footer>
 </body>
 </html>
