@@ -69,6 +69,41 @@
       border-radius: 8px;
     }
 
+    .portfolio-section {
+      margin-top: 60px;
+    }
+
+    .portfolio-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-description {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .portfolio-description {
+        margin-top: 10px;
+      }
+    }
+
     footer {
       text-align: center;
       font-size: 14px;
@@ -79,6 +114,15 @@
     footer a {
       color: #555;
       text-decoration: underline;
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 720px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -109,7 +153,15 @@
     <h2>LINEでのお問い合わせ</h2>
     <p>LINEからもお気軽にご相談いただけます。</p>
     <img src="仕事line.jpg" alt="LINE QRコード" class="center-image">
-    <p>QRコードから読み取って友達追加してください。</p>
+    <p>QRコードから読み取って友達追加してください📱</p>
+
+    <div class="portfolio-section">
+      <h2>制作実績</h2>
+      <video controls poster="poster.jpg">
+        <source src="ホームページ画像.mp4" type="video/mp4">
+        お使いのブラウザは動画タグに対応していません。
+      </video>
+    </div>
   </main>
 
   <footer>
