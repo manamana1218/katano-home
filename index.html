@@ -73,34 +73,19 @@
       margin-top: 60px;
     }
 
-    .portfolio-item {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 30px;
-      gap: 20px;
-    }
-
-    .portfolio-item img {
+    .portfolio-section img {
+      display: block;
+      margin: 0 auto;
       width: 100%;
-      max-width: 300px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .portfolio-description {
-      flex: 1;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     }
 
     @media (max-width: 768px) {
-      .portfolio-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .portfolio-description {
-        margin-top: 10px;
+      .portfolio-section img {
+        max-width: 100%;
       }
     }
 
@@ -145,11 +130,11 @@
     <h2>LINEでのお問い合わせ</h2>
     <p>LINEからもお気軽にご相談いただけます。</p>
     <img src="仕事line.jpg" alt="LINE QRコード" class="center-image">
-    <p>QRコードから読み取って友達追加してください📱</p>
+    <p>QRコードから読み取って友達追加してください。</p>
 
     <div class="portfolio-section">
       <h2>制作実績</h2>
-      <img src="ホームページ画像.gif" alt="制作実績アニメーションGIF" class="center-image">
+      <img src="ホームページ画像.gif" alt="制作実績アニメーションGIF">
     </div>
   </main>
 
