@@ -1,74 +1,130 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KATANO DESIGN | 制作実績とご案内</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KATANO DESIGN</title>
   <style>
     body {
-      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
       color: #333;
-      line-height: 1.6;
+      background-color: #fff;
     }
+
     header {
-      background-color: #f7f7f7;
-      padding: 40px 20px;
+      background-color: #f9f9f9;
       text-align: center;
+      padding: 60px 20px 40px;
     }
+
     header img {
-      width: 120px;
-      margin-bottom: 10px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h2 {
-      font-size: 1.6rem;
+      width: 140px;
+      border-radius: 10px;
       margin-bottom: 20px;
-      text-align: center;
     }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      color: #555;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #eee;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5em;
+      line-height: 2;
+    }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 30px;
     }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .gallery div {
-      flex: 1 1 250px;
-      max-width: 300px;
+
+    .gallery-item {
+      flex: 1 1 280px;
       text-align: center;
     }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact img {
+      width: 200px;
+      margin: 20px 0;
+    }
+
     footer {
       background-color: #f1f1f1;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 0.9rem;
-      margin-top: 40px;
+    }
+
+    a {
+      color: #0073aa;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.4rem;
+      }
+
+      .gallery-item {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-   <img src="images/仕事ロゴ.png" alt="KATANO DESIGN ロゴ">
+    <img src="images/仕事ロゴ.png" alt="KATANO DESIGN ロゴ" />
     <h1>KATANO DESIGN</h1>
-    <p>「スマホ・パソコンが苦手でも大丈夫」<br>やさしく伝わるデザインでお手伝いします</p>
+    <p>「スマホ・パソコンが苦手でも大丈夫」<br />やさしく伝わるデザインでお手伝いします</p>
   </header>
 
-  <section>
+  <section style="background-color: #fff;">
     <h2>ご提供しているサービス</h2>
     <ul>
       <li>チラシ・ポスター・SNS投稿用画像の作成</li>
@@ -77,19 +133,19 @@
     </ul>
   </section>
 
-  <section>
-    <h2>制作実績（一部）</h2>
+  <section style="background-color: #f9f9f9;">
+    <h2>制作実績</h2>
     <div class="gallery">
-      <div>
-        <img src="images/片野チラシ.jpg" alt="片野チラシ：サービス紹介用デザイン">
+      <div class="gallery-item">
+        <img src="images/片野チラシ.jpg" alt="片野チラシ">
         <p>チラシ制作ご案内</p>
       </div>
-      <div>
-        <img src="images/Shop card COFFEE (1).png" alt="ショップカードデザイン（COFFEE）">
+      <div class="gallery-item">
+        <img src="images/Shop card COFFEE (1).png" alt="コーヒーショップカード">
         <p>ショップカード（カフェ）</p>
       </div>
-      <div>
-        <img src="images/2.png" alt="夏祭りのポスター">
+      <div class="gallery-item">
+        <img src="images/2.png" alt="夏祭りポスター">
         <p>地域イベントポスター</p>
       </div>
     </div>
@@ -97,11 +153,11 @@
 
   <section>
     <h2>LINEでのお問い合わせ</h2>
-    <p style="text-align: center;">LINEからもお気軽にご相談いただけます。</p>
-    <p style="text-align: center;">
- <img src="images/仕事line.jpg" alt="LINE QRコード" style="width: 200px;">
-    </p>
-    <p style="text-align: center;">QRコードから読み取って友達追加してください。</p>
+    <div class="contact">
+      <p>LINEからもお気軽にご相談いただけます。</p>
+      <img src="images/仕事line.jpg" alt="LINE QRコード" />
+      <p>QRコードから読み取って友達追加してください。</p>
+    </div>
   </section>
 
   <footer>
